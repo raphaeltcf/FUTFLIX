@@ -1,0 +1,109 @@
+:root{
+    --vermelho: rgb(0, 139, 0);
+    --preta: #141414;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--preta);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+
+header .container{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 12px;
+    color: var(--vermelho);
+    font-family: 'Oswald', sans-serif;;
+    font-size: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.jogador-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0,.50),rgba(0, 0, 0,.50)100%), url('/img/neymar.jpg');
+
+    height: 550px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogador-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 50%);
+    border: none;
+    color: white;
+
+    padding: 20px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 2px;
+}
+
+.jogador-principal .container{
+    width: 55%;
+}
+
+.box-jogador{
+    height: 7%;
+    width: 5%;
+    display: block;
+}
+
+.carrosel-jogadores{
+    margin-top: 5px;
+}
